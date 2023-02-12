@@ -12,7 +12,7 @@
       "ES2020"
     ],
     "allowJs": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "sourceMap": true,
     "outDir": "./dist",
     "isolatedModules": true,
@@ -29,6 +29,18 @@
     },
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "incremental": true,
+    "resolveJsonModule": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
